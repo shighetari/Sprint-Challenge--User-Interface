@@ -36,13 +36,20 @@ Edit this document to include your answers after each question. Make sure to lea
 Semantic HTML is a markup that introduces meaning to the web page rather than just presentation.
 
 2. What are the 4 areas of the box model?
+
 content edge, padding edge, border edge, and margin edge
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+cross axsis 
+By default, the cross axis is vertical. This means the flexbox items will be centered vertically.
+
 4. Explain why git is valuable to a team of developers.
 
+it allows you to share code as well as make changes individually and as a group while keeping comments about every change while having an untouched verision for reference or previous verision as a back up. Git has many uses and allows you to work cross platform.
+
 5. Define mobile-first design in your own words.
+mobile first design means min width and allows you to scale up from tablet to desktop + users.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
