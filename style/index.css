@@ -46,6 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* my work here  */
+/* div.headerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;  */
+/* end of my work  */
+
+
 
 * {
     box-sizing: border-box;
@@ -65,6 +75,19 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+
+/* alt my work start */
+header nav{
+    width:100%;
+display:flex;
+justify-content: space-between;
+}
+nav a {
+    text-decoration: none;
+}
+
+
+/* alt my work end  */
 
 .container {
     width: 800px;
@@ -100,17 +123,144 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-.middle-content .boxes .box {
+/* start of boxes  */
+.middle-content .boxes .box1 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson
+    ;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* end of boxes  */
+ 
+/* Easier way to do boxes after I already did them the derpy way  
+    to undo what I did rename the boxes back to just box in the .html and call the child class
+.middle-content .boxes .box:first-child{
+    background-color:teal;
+}
+.middle-content .boxes .box:nth-child(2){
+    background-color:gold;
+}
+.middle-content .boxes .box:nth-child(3){
+    background-color:cadetblue;
+}
+.middle-content .boxes .box:nth-child(4){
+    background-color:coral;
+}
+.middle-content .boxes .box:nth-child(5){
+    background-color:crimson;
+}
+.middle-content .boxes .box:nth-child(6){
+    background-color:forestgreen;
+}
+.middle-content .boxes .box:nth-child(7){
+    background-color:darkorchid;
+}
+.middle-content .boxes .box:nth-child(8){
+    background-color:hotpink;
+}
+.middle-content .boxes .box:nth-child(9){
+    background-color:indigo;
+}
+.middle-content .boxes .box:nth-child(10){
+    background-color:dodgerblue;
+}
+ end of unfixed derp mode  */
 
 .bottom-content {
     display: flex;
@@ -144,3 +294,135 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* start of media quieries  */
+
+@media (max-width:800px){
+    .container{
+        width:100%;
+    }
+        #home nav{
+            font-size:1.6rem;
+            align-items: center;
+        }
+      .logo{
+          padding:4% 0;
+      }  
+    .cover-img img{
+        display:flex;
+        justify-content: :center;
+        width:100%;
+        padding:4% 0;
+    }
+    .top-content{
+        font-size: 1.2rem;
+    }
+  .top-content h2{
+      font-size: 1.6rem; 
+  }
+  .bottom-content{
+    font-size:1.2rem;
+}
+.bottom-content h2{
+    font-size:1.6rem;
+}
+
+
+
+/*phone*/
+@media(max-width: 500px){
+    .container {
+        width: 100%;
+    }
+    /* body {
+        background-color:silver ;
+    } */
+    #home nav {
+        flex-direction:column;
+        align-items: center;
+        
+
+    }
+    #home nav a{
+        background-color: grey; 
+        /* padding: .5rem; */
+        font-weight: bolder;
+       color: black;
+       display: inline-block;
+       margin: 0;
+       padding: 0.5em 3em;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  width: 40%;
+  border:1px grey solid;
+    border-radius: 2rem;
+    background-color: silver;
+    padding:.5% 1rem;
+    border-bottom-width: .3rem;
+    border-left-width: .1rem;
+    width:30%;
+    text-align:center;
+
+    }
+    #home nav a:nth-child(4){
+        display:none;
+    }
+
+    /* div.logo{
+        flex-direction:column;
+
+    } */
+    /* .links{
+      width:100%;
+      font-size:1.6rem;
+    } */
+    div.cover-img{
+      width:100%;
+     
+      display:flex;
+      justify-content:center;
+      margin-bottom:5%;
+    }
+    div.cover-img img{
+      width: 100%;
+     
+      
+      border-radius: 3%;
+    }
+    .top-content 
+    {
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    /* div.h2 
+    {
+        font-weight: bolder;
+    } */
+.top-content h2{
+    font-weight: bolder;
+}
+.top-content .text-container{
+    width: 100%;
+}
+
+.bottom-content {
+    display: none;
+}
+.middle-content .boxes{
+    flex-direction: column;
+    align-content: center;
+
+}
+.middle-content h2{
+    text-align: center;
+}
+/* .middle-content .boxes {
+    display: block;
+    i'll try to make them not rectangular
+    after i finish the nav..
+} */
+  }
